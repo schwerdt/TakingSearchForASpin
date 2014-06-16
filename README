@@ -1,0 +1,31 @@
+In this project, I am trying to implement a search method.  I made up a few articles about
+animals that the program searches, given the string that the user provides.  
+
+Each article added for searching must go in to the file articlelist  (one article 
+per line).  
+
+The code works by constructing a word vector for the search string.  Then 
+the code runs through the articles and computes a word vector for each
+article. 
+
+The words in the word vector consist of the words in the search string.
+Then the word vectors for each article have word counts in that particular
+article for the words in the search string.
+
+Ex.
+search is:  "cats are furry"
+so the words in the word vector are 'cats', 'are', 'furry'
+The counts of those words in each article are tracked.
+If the article has the word 'cats' 2x, 'are' 3x and 'furry' 1x, the word
+vector is:
+[2, 3, 1]
+
+This vector can be normalized.
+
+The simple_search.py code is very simple and uses minimum Euclidian distance between
+articles and the search string.  In search.py, I was testing the Inverse Document Frequency
+measure on the search.  This causes words that appear in a lot of articles to be given
+a less importance (through a smaller weighting factor).  One example of this is the word 'are'.
+
+I plan to test different methods for finding the best match and then work on adding different article sources.
+  
