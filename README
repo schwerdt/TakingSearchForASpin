@@ -1,8 +1,9 @@
-In this project, I am trying to implement a search method.  I made up a few articles about
-animals that the program searches, given the string that the user provides.  
+In this project, I am trying to implement a search method.  
+I made up a few articles about animals that the program 
+searches, given the string that the user provides.  
 
-Each article added for searching must go in to the file articlelist  (one article 
-per line).  
+Each article added for searching must go in to the file 
+articlelist  (one article per line).  
 
 The code works by constructing a word vector for the search string.  Then 
 the code runs through the articles and computes a word vector for each
@@ -22,10 +23,12 @@ vector is:
 
 This vector can be normalized.
 
-The simple_search.py code is very simple and uses minimum Euclidian distance between
-articles and the search string.  In search.py, I was testing the Inverse Document Frequency
-measure on the search.  This causes words that appear in a lot of articles to be given
-a less importance (through a smaller weighting factor).  One example of this is the word 'are'.
+The simple_search.py code is very simple and uses minimum Euclidian 
+distance between articles and the search string.  In search.py, I was 
+testing the Inverse Document Frequency measure on the search.  This causes 
+words that appear in a lot of articles to be given less importance 
+(through a smaller weighting factor).  One example of this is the 
+word 'are'.
 
 I plan to test different methods for finding the best match and then work on adding different article sources.
   
